@@ -12,5 +12,5 @@ jobs:
       - run: echo "This is running inside a ${{ runner.os }} server in GitHub"
       - name: Check out source code
         uses: actions/checkout@v4.1.5
-      - run: echo :This repo is ${{ github.repository }} .."
+      - run: echo "This repo is ${{ github.repository }} .."
          
