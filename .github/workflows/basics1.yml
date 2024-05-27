@@ -5,9 +5,7 @@ on: push
 jobs:
   Selenium_Test_Job1:
     name: Selenium Test Job
-    
     runs-on: ubuntu-latest
-
     steps:
       - run: echo "This is running inside a ${{ runner.os }} server in GitHub"
       - name: Check out source code
@@ -21,5 +19,15 @@ jobs:
       - name: Run a script file from repo
         run: sh ./run.sh
         shell: pwsh 
+
+
+  Selenium_Test_Jobs2:
+    name: Selenium Test Job 2
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is rfrom second job"
+    
+    
+
       
          
